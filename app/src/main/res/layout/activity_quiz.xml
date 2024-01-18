@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/questionQuiz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="58dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/reponseQuiz1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reponseQuiz1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="reponseUnClick"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/questionQuiz2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionQuiz" />
+
+    <TextView
+        android:id="@+id/questionQuiz2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="47dp"
+        android:onClick="reponseDeuxClick"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/questionQuiz3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponseQuiz1" />
+
+    <TextView
+        android:id="@+id/questionQuiz3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="170dp"
+        android:onClick="reponseTroisClick"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionQuiz2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
